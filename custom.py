@@ -79,7 +79,9 @@ class CustomDataset(utils.Dataset):
         #   'size': 100202
         # }
         # We mostly care about the x and y coordinates of each region
-        annotations1 = json.load(open('D:/MaskRCNN-main/Dataset/train/via_project.json'))
+	# Make sure the name of both training and validation file is same
+	anonotation-path=f'D:/MaskRCNN-main/Dataset/{subset}/via_project.json'
+        annotations1 = json.load(open())
         # print(annotations1)
         annotations = list(annotations1.values())  # don't need the dict keys
 
